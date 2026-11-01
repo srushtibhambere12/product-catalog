@@ -2,7 +2,7 @@
 
 A responsive product catalog web app made with React. It shows products from the DummyJSON API. You can search them, filter them by category, and click a product to see its full details, prices and customer reviews.
 
-**Live Demo:** https://your-app.vercel.app
+**Live Demo:** https://product-catalog-roan-nine.vercel.app/
 
 ## Features
 
@@ -39,7 +39,7 @@ A responsive product catalog web app made with React. It shows products from the
 You need Node.js version 20 or above.
 
 ```bash
-git clone https://github.com/<your-username>/product-catalog.git
+git clone https://github.com/srushtibhambere12/product-catalog.git
 cd product-catalog
 npm install
 npm run dev
