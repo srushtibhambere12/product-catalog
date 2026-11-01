@@ -1,25 +1,42 @@
 # ShopEasy - Product Catalog
 
-A responsive product catalog web app made with React. It shows products from the DummyJSON API, and you can search them, filter them by category and click a product to see its full details.
+A responsive product catalog web app made with React. It shows products from the DummyJSON API. You can search them, filter them by category, and click a product to see its full details, prices and customer reviews.
 
-**Live Demo:** (add your link here)
+**Live Demo:** https://your-app.vercel.app
 
 ## Features
 
+**Product list**
 - Products loaded from https://dummyjson.com/products
-- Product cards show image, title, category, price and rating
+- Each card shows the image, category, title, star rating, final price and original price
+- Discount badge on the product image (for example -10%)
+
+**Search and filter**
 - Search box that filters products while typing (by name, brand or category)
 - Category dropdown filter
-- Product details popup with image gallery, description and specifications
+- Result count, for example "Showing 5 of 194 products"
+
+**Product details popup**
+- Image gallery with clickable thumbnails
+- Brand, star rating and number of reviews
+- Stock status (In Stock with quantity left, or Out of Stock)
+- Final price, original price (crossed out) and discount percentage
+- Description and specifications table (brand, stock, weight, dimensions, warranty, shipping, return policy)
+- Customer reviews with name, date, star rating and comment
+- Closes with the X button, the Escape key or by clicking outside
+
+**Loading, empty and error states**
 - Loading spinner while data is loading
 - "No products found" message with a Clear Filters button
 - Error message with a Try Again button if the API fails
-- Error boundary so the app does not show a blank page if something crashes
-- Responsive layout for desktop, tablet and mobile
+- Error boundary so the app shows a message instead of a blank page if something crashes
+
+**Responsive design**
+- Works on desktop, tablet and mobile
 
 ## Setup Instructions
 
-You need Node.js (version 20 or above) installed.
+You need Node.js version 20 or above.
 
 ```bash
 git clone https://github.com/<your-username>/product-catalog.git
@@ -43,6 +60,7 @@ npm run build
 - **Plain CSS** - one CSS file for each component
 - **React hooks** (`useState`, `useEffect`) for state management
 - **Fetch API** for calling the products API
+- **Vercel** for hosting
 
 ## Folder Structure
 
