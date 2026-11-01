@@ -1,0 +1,41 @@
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.search-input,
+.category-select {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.category-select {
+  width: 220px;
+  text-transform: capitalize;
+}
+
+.search-input:focus,
+.category-select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* stack search and dropdown on small screens */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .category-select {
+    width: 100%;
+  }
+}
